@@ -50,8 +50,8 @@ function connectDB_Users(){
 	error_reporting(0);
 	try
 	{
-		$m    = new MongoClient("mongodb://localhost:27017/test"); //Connect to your mongoDB instance. If you want security please add a username for each collections, for instance username:password@localhost.
-		$db   = $m->test;
+		$m    = new MongoClient("mongodb://localhost:27017/Users"); //Connect to your mongoDB instance. If you want security please add a username for each collections, for instance username:password@localhost.
+		$db   = $m->Users;
 		$coll = $db->users;
 	}
 	catch (MongoConnectionException $e)
